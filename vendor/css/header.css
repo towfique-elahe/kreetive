@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Roboto+Mono:wght@400;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: Montserrat Alternates;
-    transition: ease-in .2s;
+    font-family: Roboto Mono;
+    transition: ease .1s;
+}
+
+*::selection{
+    background-color: var(--color1);
+    color: var(--color4);
 }
 
 :root{
-    --color1: #F90000;
+    --color1: #E62E3C;
     --color2: #5F1C43;
-    --color3: #2C222A;
+    --color3: #2A2A2A;
     --color4: #ffffff;
 }
 
@@ -20,6 +25,27 @@
     width: 90%;
     max-width: 1080px;
     margin: 0 auto;
+}
+
+/* font styles */
+.title, .heading{
+    font-family: Roboto Mono;
+    font-weight: 700;
+    letter-spacing: .5rem;
+}
+.sub-title, .sub-heading{
+    font-family: Roboto Mono;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+.para{
+    font-family: Montserrat;
+    font-weight: 300;
+}
+.code{
+    font-family: Montserrat;
+    font-weight: 100;
+    letter-spacing: .1rem;
 }
 
 html{
@@ -37,6 +63,19 @@ html{
 }
 
 
+/* kreetive */
+.kreetive{
+    color: var(--color1);
+}
+.kreetiveU{
+    border-bottom: var(--color1) 5px solid;
+}
+
+/* box shadow */
+.shadow{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
 /* buttons */
 #button-k{
     background-color: var(--color1);
@@ -46,7 +85,7 @@ html{
     font-size: 1.2rem;
 }
 #button-k:hover{
-    background-color: #cc0000;
+    background-color: #e62e3da8;
 }
 
 
@@ -64,7 +103,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--color3);
+    background-color: rgb(245, 245, 245);
     padding: .5rem 2rem;
     border-radius: 0 0 1.5rem 1.5rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -79,7 +118,7 @@ html{
 }
 #header .btn {
     background-color: transparent;
-    color: var(--color4);
+    color: var(--color3);
     border: none;
     cursor: pointer;
     padding: .4rem;
@@ -101,8 +140,8 @@ html{
 #header .sub-menu {
     display: none;
     position: absolute;
-    background-color: #ebebeb;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgba(245, 245, 245, 0.932);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.349);
     z-index: 999;
     border-radius: 0 0 .8rem .8rem;
 }
@@ -112,7 +151,7 @@ html{
 #header .show {
     display: block;
 }
-#header .heading{
+#header .mHeading{
     padding: .5rem 1rem;
     color: var(--color1);
 }
@@ -122,11 +161,11 @@ html{
     text-decoration: none;
     display: block;
     border-bottom: solid transparent .1rem;
-    border-radius: 0 0 .8rem .8rem;
+    border-radius: 0 0 .5rem .5rem;
 }
 #header .sub-menu a:hover, #header .sub-menu a:active, #header .sub-menu a:focus {
-    background-color: #2c222a9f;
-    color: var(--color4);
+    background-color: var(--color4);
+    color: var(--color3);
     border-bottom: solid var(--color1) .1rem;
     transform: scale(1.05);
 }
@@ -136,15 +175,15 @@ html{
 
 /* company sub */
 #header .company-sub{
-    min-width: 12rem;
+    min-width: 14rem;
 }
 /* testimonial sub */
 #header .testimonial-sub{
-    min-width: 14rem;
+    min-width: 17rem;
 }
 /* internship sub */
 #header .internship-sub{
-    min-width: 16rem;
+    min-width: 20rem;
 }
 /* service sub */
 #header .service-sub{
@@ -152,7 +191,7 @@ html{
 }
 #header .service-sub .container{
     display: flex;
-    min-width: 48rem;
+    min-width: 57rem;
 }
 /* training sub */
 #header .training-sub{
@@ -160,7 +199,7 @@ html{
 }
 #header .training-sub .container{
     display: flex;
-    min-width: 51rem;
+    min-width: 55rem;
 }
 
 
@@ -181,7 +220,7 @@ html{
         z-index: 999;
     }
     #m-header .logo{
-        width: 16rem;
+        width: 12rem;
     }
     #m-header #main{
         width: 90%;
