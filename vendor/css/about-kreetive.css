@@ -1,3 +1,17 @@
+/* menu styles */
+#header .fixed-header{
+    background-color: var(--color3);
+}
+#header .btn{
+    color: var(--color4);
+}
+#m-header #main{
+    background-color: var(--color3);
+}
+#m-header .openbtn{
+    color: var(--color4);
+}
+
 
 /* tech section start */
 #tech .container{
