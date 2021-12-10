@@ -11,13 +11,14 @@ body{
 #tech .container .left{
     background-color: var(--color3);
     color: var(--color4);
-    border-radius: 0 0 1rem 1rem;
+    border-radius: .5rem;
     padding: .5rem 1rem;
     margin-bottom: 1rem;
 }
 #tech .container .info{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 #tech .container .right a{
     padding: .5rem;
@@ -29,44 +30,7 @@ body{
     transform: scale(1.1);
 }
 #tech .container .right img{
-    width: 3.5rem;
+    width: 4.1rem;
 }
-@media only screen and (min-width: 375px){
-    #tech .container .right img{
-        width: 4.4rem;
-    }
-}
-@media only screen and (min-width: 390px){
-    #tech .container .right img{
-        width: 3.6rem;
-    }
-}
-@media only screen and (min-width: 414px){
-    #tech .container .right img{
-        width: 3.9rem;
-    }
-}
-@media only screen and (min-width: 428px){
-    #tech .container .right img{
-        width: 4.1rem;
-    }
-}
-@media only screen and (min-width: 810px){
-    #tech .container .left{
-        text-align: center;
-    }
-    #tech .container .right img{
-        width: 3.8rem;
-    }
-}
-@media only screen and (min-width: 810px){
-    #tech .container .right img{
-        width: 4.5rem;
-    }
-}
-@media only screen and (min-width: 810px){
-    #tech .container .right img{
-        width: 5.1rem;
-    }
-}
+
 /* tech section ends */
