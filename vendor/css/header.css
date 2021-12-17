@@ -51,7 +51,7 @@
 html{
     font-size: 14px;
 }
-@media only screen and (max-width: 810px){
+@media only screen and (max-width: 767px){
     html{
         font-size: 12px;
     }
@@ -222,12 +222,12 @@ html{
 
 
 /* mobile menu */
-@media only screen and (min-width: 901px){
+@media only screen and (min-width: 951px){
     #m-header{
         display: none;
     }
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 950px){
     #header{
         display: none;
     }

@@ -14,8 +14,15 @@ body{
     justify-content: center;
     gap: 6rem;
 }
+#hero .container .left{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #hero .container .left .heading{
-    font-size: 2rem;
+    font-size: 2.1rem;
     padding: 1rem 0;
 }
 #hero .container .left .para:nth-child(5){
@@ -23,6 +30,33 @@ body{
 }
 #hero .right img{
     width: 100%;
+}
+@media only screen and (min-width: 414px){
+    #hero .container .left .heading{
+        font-size: 1.9rem;
+    }
+}
+@media only screen and (min-width: 767px){
+    #hero .container .left .heading{
+        font-size: 3rem;
+    }
+    #hero .container .left .para{
+        font-size: 1.4rem;
+    }
+    #hero .container .left .button-k{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (min-width: 1080px){
+    #hero .container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero .container .left{
+        align-items: flex-start;
+        text-align: left;
+    }
 }
 /* hero sectiton ends */
 
