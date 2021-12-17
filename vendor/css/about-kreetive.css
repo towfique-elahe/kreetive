@@ -153,5 +153,7 @@ body{
 #history .container .timeline{
     display: flex;
 }
-
+#history .container .timeline .date{
+    margin-top: 1.5rem;
+}
 /* history section ends */
