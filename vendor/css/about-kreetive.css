@@ -25,6 +25,9 @@ body{
     font-size: 2.1rem;
     padding: 1rem 0;
 }
+#hero .container .left .para{
+    font-size: 1.1rem;
+}
 #hero .container .left .para:nth-child(5){
     padding: 0 0 1.5rem 0;
 }
@@ -34,6 +37,9 @@ body{
 @media only screen and (min-width: 414px){
     #hero .container .left .heading{
         font-size: 1.9rem;
+    }
+    #hero .container .left .para{
+        font-size: 1rem;
     }
 }
 @media only screen and (min-width: 767px){
@@ -61,26 +67,33 @@ body{
 /* hero sectiton ends */
 
 /* tech section start */
+#tech{
+    padding: 5rem 0;
+}
 #tech .container{
     display: flex;
     flex-direction: column;
-    padding: 3rem 0;
 }
 #tech .container .left{
-    background-color: var(--color3);
-    color: var(--color4);
-    border-radius: .5rem;
-    padding: .5rem 1rem;
     margin-bottom: 1rem;
+}
+#tech .container .left .sub-heading{
+    font-size: 1.5rem;
+    text-align: center;
 }
 #tech .container .info{
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-align: center;
 }
+#tech .container .right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 #tech .container .right a{
     padding: .5rem;
-    display: inline-block;
     border-radius: 0 0 .5rem .5rem;
 }
 #tech .container .right .tech-icons:hover{
@@ -88,6 +101,26 @@ body{
     transform: scale(1.1);
 }
 #tech .container .right img{
-    width: 4.1rem;
+    width: 4rem;
+}
+@media only screen and (min-width: 414px){
+    #tech .container .right img{
+        width: 4.1rem;
+    }
+}
+@media only screen and (min-width: 767px){
+    #tech .container .right img{
+        width: 3.5rem;
+    }
+}
+@media only screen and (min-width: 810px){
+    #tech .container .right img{
+        width: 3.3rem;
+    }
+}
+@media only screen and (min-width: 1080px){
+    #tech .container .right img{
+        width: 5rem;
+    }
 }
 /* tech section ends */
