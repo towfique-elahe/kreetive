@@ -444,11 +444,11 @@ body{
     transform: scale(1.05);
 }
 #team .member img{
+    width: 100%;
     border-radius: .5rem;
-    opacity: 1;
 }
 #team .member:hover img, #team .member:active img{
-    opacity: .8;
+    filter: unset;
 }
 #team .info{
     position: absolute;
@@ -503,6 +503,9 @@ body{
     }
     #team .member:hover .social{
         top: 10px;
+    }
+    #team .member img{
+        filter: grayscale();
     }
 }
 /* team section ends */
