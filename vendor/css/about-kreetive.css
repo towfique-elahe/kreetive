@@ -1,5 +1,5 @@
 body{
-    background-color: whitesmoke;
+    background-color: var(--pagebg);
 }
 
 /* hero sectiton start */
@@ -20,6 +20,7 @@ body{
 }
 #hero .left .para{
     font-size: 1.1rem;
+    line-height: 2rem;
 }
 #hero .right img{
     width: 100%;
