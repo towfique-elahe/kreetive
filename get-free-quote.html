@@ -724,21 +724,22 @@
         <!-- jumbotron ends -->
 
         <!-- quote form -->
-        <form name="Quote" action="" method="post">
-            <div class="name">
-                <input type="text" name="fn" id="firstName" placeholder="First Name *" required>
-                <input type="text" name="ln" id="lastName" placeholder="Last Name *" required>
-            </div>
-            <div class="contact">
-                <input type="email" name="uemail" id="uEmail" placeholder="E-mail *" required>
+        <form name="Quote" action="#" method="post">
+            <div class="row">
+                <input type="text" name="fn" id="fullName" placeholder="Full Name *" required>
                 <input type="tel" name="uphone" id="uPhone" placeholder="Phone">
             </div>
-            <div class="info">
-                <input type="text" name="uoccupation" id="uOccupation" placeholder="Occupation">
-                <input type="text" name="country" id="uCountry" placeholder="Country">
+            <div class="row">
+                <input type="email" name="uemail" id="uEmail" placeholder="E-mail *" required>
+                <input type="text" name="country" id="uCountry" placeholder="Country *" required>
             </div>
-            <div class="service">
+            <div class="row">
+                <input type="text" name="uoccupation" id="uOccupation" placeholder="Occupation / Education Level">
+                <input type="text" name="company" id="uCompany" placeholder="Company / Institute">
+            </div>
+            <div class="row">
                 <select name="uservice" id="uService">
+                    <option value="" selected disabled class="f-selected">Service</option>
                     <option value="">SEO</option>
                     <option value="">SMM</option>
                     <option value="">Digital Marketing</option>
@@ -749,7 +750,11 @@
                     <option value="">MS Office</option>
                 </select>
             </div>
-            <input type="text" name="udescription" id="uDescription" placeholder="Your message *">
+            <div class="row">
+                <input type="url" name="surl" id="sUrl" placeholder="URL">
+                <input type="file" name="sfile" id="sFile">
+            </div>
+            <textarea name="udescription" id="uDescripttion" placeholder="Your Message *" required></textarea>
             <button type="submit">Submit</button>
         </form>
     </section>

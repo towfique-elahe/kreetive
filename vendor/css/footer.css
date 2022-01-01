@@ -1,6 +1,7 @@
 footer{
     width: 100%;
     height: 100vh;
+    min-height: 667px;
     background-color: var(--color3);
     color: var(--color4);
     display: flex;
@@ -89,6 +90,9 @@ footer .copyright a:hover{
     }
 }
 @media only screen and (min-width: 1080px){
+    footer{
+        min-height: initial;
+    }
     footer .wrapper{
         flex-direction: row;
     }
