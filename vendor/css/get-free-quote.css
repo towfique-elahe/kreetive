@@ -86,3 +86,18 @@ body{
         background-color: rgba(245, 245, 245, 0.062);
     }
 }
+@media only screen and (max-height: 750px){
+    #hero form{
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-height: 620px){
+    #hero form{
+        margin-top: 150px;
+    }
+}
+@media only screen and (max-height: 570px){
+    #hero form{
+        margin-top: 200px;
+    }
+}
