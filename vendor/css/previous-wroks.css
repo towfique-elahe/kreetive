@@ -1,0 +1,69 @@
+/* previous works section start */
+#works{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#works .heading{
+    font-size: 2.1rem;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+#works .work-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+}
+#works .card{
+    width: 250px;
+    height: 310px;
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
+}
+#works .card:hover, #works .card:active{
+    transform: scale(1.05);
+}
+#works .card img{
+    border-radius: .5rem;
+    opacity: 1;
+}
+#works .card:hover img, #works .card:active img{
+    opacity: .8;
+}
+#works .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: var(--color3);
+    color: var(--color4);
+    border-radius: .5rem;
+    box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    gap: .5rem;
+    transition: ease .5s;
+
+}
+#works .card:hover .info, #works .card:active .info{
+    height: 150px;
+    gap: 1rem;
+}
+#works .button-k{
+    display: block;
+    width: 10rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+/* previous works section ends */

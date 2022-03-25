@@ -1,0 +1,113 @@
+/* contact section start */
+#contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact .heading{
+    font-size: 2.1rem;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+#contact .contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact iframe{
+    border: none;
+    border-radius: 0 0 .5rem .5rem;
+    border: var(--color3) solid 1px;
+    margin-top: -1rem;
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    min-height: 200px;
+    z-index: 1;
+}
+#contact .info{
+    width: 100%;
+    color: var(--color4);
+    padding: 1rem;
+    background: #2A2A2A;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+    z-index: 2;
+    text-align: center;
+}
+#contact .info .sub-heading{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+#contact .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#contact .info .links{
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#contact .info .links a{
+    color: var(--color4);
+}
+#contact .info .links a:hover{
+    color: var(--color1);
+}
+#contact .info .links ion-icon{
+    margin-bottom: -2px;
+}
+#contact .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+#contact .social a{
+    color: var(--color4);
+}
+#contact .social a:hover{
+    color: var(--color1);
+}
+@media only screen and (min-width: 767px){
+    #contact .contact{
+        flex-direction: row;
+    }
+    #contact iframe{
+        min-height: 300px;
+        border-radius: 0 .5rem .5rem 0;
+        border-width: 2px;
+        margin: 0;
+        margin-left: -10px;
+    }
+    #contact .info{
+        text-align: start;
+    }
+    #contact .buttons{
+        justify-content: start;
+    }
+    #contact .info .links{
+        align-items: flex-start;
+    }
+    #contact .social{
+        justify-content: start;
+    }
+}
+@media only screen and (min-width: 810px){
+    #contact iframe{
+        min-height: 350px;
+    }
+}
+/* contact section ends */
